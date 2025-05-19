@@ -37,10 +37,6 @@ bedmed/
 ├── assets/
 │ └── logo.png / icônes / images
 
-yaml
-Copier
-Modifier
-
 ---
 
 ## 🛠️ Technologies utilisées
