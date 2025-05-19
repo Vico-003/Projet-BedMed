@@ -1,0 +1,81 @@
+<!-- Refactored and improved version of Dashboard admin.html -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BedMed - Tableau de bord</title>
+    <link rel="stylesheet" href="../css/dashboard admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img
+            src="../assets/Logo BEDMED.jpeg"
+            alt="Logo BedMed"
+            class="logo"
+          />
+          <h1 class="brand">BedMed</h1>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="patients.html" class="nav-link"
+            ><i class="fas fa-user-injured"></i> Patients</a
+          >
+          <a href="soignants.html" class="nav-link"
+            ><i class="fas fa-user-nurse"></i> Soignants</a
+          >
+          <a href="interventions.html" class="nav-link"
+            ><i class="fas fa-stethoscope"></i> Interventions</a
+          >
+          <a href="chambres.html" class="nav-link"
+            ><i class="fas fa-bed"></i> Chambres</a
+          >
+          <a href="historique.html" class="nav-link"
+            ><i class="fas fa-history"></i> Historique</a
+          >
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <input
+            type="text"
+            placeholder="Recherche..."
+            aria-label="Recherche générale"
+            class="search-bar"
+          />
+        </header>
+        <section class="dashboard-overview">
+          <h2>Bienvenue sur le tableau de bord</h2>
+          <p>Sélectionnez une section dans le menu à gauche pour commencer.</p>
+        </section>
+
+        <section class="stats-cards">
+          <div class="card">
+            <h3>Patients</h3>
+            <p class="stat-value">128</p>
+          </div>
+          <div class="card">
+            <h3>Soignants</h3>
+            <p class="stat-value">34</p>
+          </div>
+          <div class="card">
+            <h3>Chambres disponibles</h3>
+            <p class="stat-value">12 / 40</p>
+          </div>
+          <div class="card">
+            <h3>Interventions aujourd’hui</h3>
+            <p class="stat-value">6</p>
+          </div>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>

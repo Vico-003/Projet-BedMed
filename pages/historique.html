@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historique - BedMed</title>
+    <link rel="stylesheet" href="../css/dashboard admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <a href="Dashboard admin.html" class="sidebar-header">
+          <img
+            src="../assets/Logo BEDMED.jpeg"
+            alt="Logo BedMed"
+            class="logo"
+          />
+          <h1 class="brand">BedMed</h1>
+        </a>
+        <nav class="sidebar-nav">
+          <a href="patients.html" class="nav-link"
+            ><i class="fas fa-user-injured"></i> Patients</a
+          >
+          <a href="soignants.html" class="nav-link"
+            ><i class="fas fa-user-nurse"></i> Soignants</a
+          >
+          <a href="interventions.html" class="nav-link"
+            ><i class="fas fa-stethoscope"></i> Interventions</a
+          >
+          <a href="chambres.html" class="nav-link"
+            ><i class="fas fa-bed"></i> Chambres</a
+          >
+          <a href="historique.html" class="nav-link"
+            ><i class="fas fa-history"></i> Historique</a
+          >
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <input
+            type="text"
+            placeholder="Recherche historique..."
+            class="search-bar"
+            aria-label="Recherche historique"
+          />
+        </header>
+
+        <section class="dashboard-overview">
+          <h2>Historique des Interventions</h2>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Soignant</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Patient">Jean Dupont</td>
+                <td data-label="Date">20/04/2025</td>
+                <td data-label="Soignant">Dr. Paul</td>
+                <td data-label="Actions">
+                  <div class="table-buttons">
+                    <button class="action-btn">Voir</button>
+                    <button class="btn-delete">Supprimer</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Patient">Marie Curie</td>
+                <td data-label="Date">22/04/2025</td>
+                <td data-label="Soignant">Dr. Alice</td>
+                <td data-label="Actions">
+                  <div class="table-buttons">
+                    <button class="action-btn">Voir</button>
+                    <button class="btn-delete">Supprimer</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

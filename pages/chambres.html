@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chambres - BedMed</title>
+    <link rel="stylesheet" href="../css/dashboard admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <a href="Dashboard admin.html" class="sidebar-header">
+          <img
+            src="../assets/Logo BEDMED.jpeg"
+            alt="Logo BedMed"
+            class="logo"
+          />
+          <h1 class="brand">BedMed</h1>
+        </a>
+        <nav class="sidebar-nav">
+          <a href="patients.html" class="nav-link"
+            ><i class="fas fa-user-injured"></i> Patients</a
+          >
+          <a href="soignants.html" class="nav-link"
+            ><i class="fas fa-user-nurse"></i> Soignants</a
+          >
+          <a href="interventions.html" class="nav-link"
+            ><i class="fas fa-stethoscope"></i> Interventions</a
+          >
+          <a href="chambres.html" class="nav-link"
+            ><i class="fas fa-bed"></i> Chambres</a
+          >
+          <a href="historique.html" class="nav-link"
+            ><i class="fas fa-history"></i> Historique</a
+          >
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <input
+            type="text"
+            placeholder="Recherche de chambre..."
+            id="search-input"
+            class="search-bar"
+            aria-label="Recherche chambre"
+          />
+        </header>
+
+        <section class="dashboard-overview">
+          <h2>Liste des Chambres</h2>
+
+          <div class="actions">
+            <button class="add-btn" data-type="chambre">
+              <i class="fas fa-plus"></i> Ajouter Chambre
+            </button>
+          </div>
+
+          <table id="chambres-table" class="data-table">
+            <thead>
+              <tr>
+                <th>Numéro</th>
+                <th>Type</th>
+                <th>Statut</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Numéro">101</td>
+                <td data-label="Type">Simple</td>
+                <td data-label="Statut">Disponible</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="action-btn">Détails</button>
+                    <button class="btn-delete">Supprimer</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Numéro">102</td>
+                <td data-label="Type">Double</td>
+                <td data-label="Statut">Occupée</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="action-btn">Détails</button>
+                    <button class="btn-delete">Supprimer</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/BedMed.js" defer></script>
+  </body>
+</html>
